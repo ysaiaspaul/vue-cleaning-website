@@ -1,8 +1,8 @@
 <template>
   <v-app>
-    <v-app-bar app color="red lighten-4">
+    <v-app-bar app color="blue lighten-4">
       <v-toolbar-title style="color: black">{{ appTitle }}</v-toolbar-title>
-      <v-toolbar color="red lighten-4" flat>
+      <v-toolbar color="blue lighten-4" flat>
         <v-tabs v-model="activeTab" centered slider-color="#5b5b5b">
           <v-tab
             v-for="tab of tabs"
@@ -16,16 +16,16 @@
         </v-tabs>
       </v-toolbar>
     </v-app-bar>
-    <v-main>
-      <v-container transition="slide-x-transition">
-        <router-view></router-view>
-      </v-container>
-    </v-main>
+    <v-content transition="slide-x-transition">
+      <router-view></router-view>
+    </v-content>
+    <Footer></Footer>
   </v-app>
 </template>
 
 <style></style>
 <script>
+import Footer from "@/components/Footer";
 export default {
   name: "App",
   props: ["id"],
@@ -39,5 +39,6 @@ export default {
       ],
     };
   },
+  components: { Footer },
 };
 </script>
