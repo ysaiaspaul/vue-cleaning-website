@@ -1,9 +1,9 @@
 <template>
   <v-app>
-    <v-app-bar app color="blue lighten-4">
+    <v-app-bar app color="white">
       <v-toolbar-title style="color: black">{{ appTitle }}</v-toolbar-title>
-      <v-toolbar color="blue lighten-4" flat>
-        <v-tabs v-model="activeTab" centered slider-color="#5b5b5b">
+      <v-toolbar color="white" flat>
+        <v-tabs v-model="activeTab" left slider-color="#5b5b5b" class="ml-16">
           <v-tab
             v-for="tab of tabs"
             :key="tab.id"
@@ -14,6 +14,9 @@
             {{ tab.name }}
           </v-tab>
         </v-tabs>
+        <v-btn depressed right color="#0397D9" class="white--text"
+          >Pricing</v-btn
+        >
       </v-toolbar>
     </v-app-bar>
     <v-content transition="slide-x-transition">
@@ -36,6 +39,7 @@ export default {
       tabs: [
         { id: 1, name: "Home", route: "/" },
         { id: 2, name: "About", route: "/about" },
+        { id: 3, name: "Contact Us", route: "/contactUs" },
       ],
     };
   },

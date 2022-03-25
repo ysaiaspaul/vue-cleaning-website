@@ -49,6 +49,7 @@
             dui.
           </p>
         </v-flex>
+        <Form></Form>
       </v-layout>
     </v-container>
   </div>
@@ -57,10 +58,12 @@
 <script>
 // @ is an alias to /src
 import HomeHero from "@/components/HomeHero";
+import Form from "@/components/Form";
 export default {
   name: "HomeView",
   components: {
     HomeHero,
+    Form,
   },
 };
 </script>

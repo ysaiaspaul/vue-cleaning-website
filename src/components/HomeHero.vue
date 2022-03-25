@@ -7,9 +7,9 @@
       <div class="display-3 font-weight-black white--text text-xs-center mb-3">
         ESTIMATE
       </div>
-      <v-btn class="ma-10 flat-sm" outline color="primary blue lighten-1">
-        Request a quote
-      </v-btn>
+      <v-btn depressed color="#0397D9" class="white--text mt-16"
+        >Get Started</v-btn
+      >
     </v-layout>
   </v-container>
 </template>
