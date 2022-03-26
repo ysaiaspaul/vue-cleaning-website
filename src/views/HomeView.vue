@@ -55,6 +55,14 @@
         <v-flex mb-16>
           <testimonials></testimonials>
         </v-flex>
+        <v-flex class="display-2 text-center my-10"
+          >Give Us A Call Today</v-flex
+        >
+        <v-layout justify-center mb-16>
+          <v-btn depressed color="#0397D9" class="white--text mt-16"
+            >Get Started</v-btn
+          >
+        </v-layout>
       </v-layout>
     </v-container>
   </div>

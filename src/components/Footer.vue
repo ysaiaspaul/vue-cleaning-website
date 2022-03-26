@@ -1,18 +1,18 @@
 <template>
-  <v-footer color="blue lighten-4" padless>
+  <v-footer color="blue" padless>
     <v-row justify="center" no-gutters>
       <v-btn
         v-for="link of links"
         :key="link.id"
         :to="link.route"
-        color="#5b5b5b"
+        color="white"
         text
         rounded
         class="my-2"
       >
         {{ link.name }}
       </v-btn>
-      <v-col class="blue lighten-4 py-4 text-center #5b5b5b--text" cols="12">
+      <v-col class="blue py-4 text-center white--text" cols="12">
         {{ new Date().getFullYear() }} - <strong>Fully Clean</strong>
       </v-col>
     </v-row>
