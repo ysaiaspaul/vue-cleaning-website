@@ -19,8 +19,10 @@
         >
       </v-toolbar>
     </v-app-bar>
-    <v-content transition="slide-x-transition">
-      <router-view></router-view>
+    <v-content>
+      <v-fade-transition>
+        <router-view></router-view>
+      </v-fade-transition>
     </v-content>
     <Footer></Footer>
   </v-app>

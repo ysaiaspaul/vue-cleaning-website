@@ -3,9 +3,9 @@
     <HomeHero app></HomeHero>
     <v-container app>
       <v-layout column>
-        <v-flex class="display-2 text-xs-center my-5">Fully Clean</v-flex>
+        <v-flex class="display-2 text-center my-5">Who we are</v-flex>
         <v-flex>
-          <div class="headline mt-3">Loren ipsum</div>
+          <div class="headline mt-3">Fully clean</div>
           <p class="subheading mt-3">Loren ipsum dolor sit amet, consectetur</p>
         </v-flex>
         <v-flex>
@@ -49,7 +49,12 @@
             dui.
           </p>
         </v-flex>
-        <Form></Form>
+        <v-flex class="display-2 text-center my-16"
+          >What Our Clients Say?</v-flex
+        >
+        <v-flex mb-16>
+          <testimonials></testimonials>
+        </v-flex>
       </v-layout>
     </v-container>
   </div>
@@ -58,12 +63,12 @@
 <script>
 // @ is an alias to /src
 import HomeHero from "@/components/HomeHero";
-import Form from "@/components/Form";
+import Testimonials from "@/components/Testimonials";
 export default {
   name: "HomeView",
   components: {
     HomeHero,
-    Form,
+    Testimonials,
   },
 };
 </script>
