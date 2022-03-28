@@ -1,31 +1,26 @@
 <template>
   <v-app>
+    <v-navigation-drawer
+      app
+      v-model="drawer"
+      class="blue lighten-5"
+      disable-watcher
+      temporary
+    >
+      <v-list nav dense>
+        <v-list-item v-for="tab of tabs" :key="tab.id" :to="tab.route">
+          <v-spacer :key="tab.id"></v-spacer>
+          <v-list-title :key="id">
+            <v-list-title-content style="color: black">
+              <v-list-item-title>
+                {{ tab.name }}
+              </v-list-item-title>
+            </v-list-title-content>
+          </v-list-title>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
     <v-app-bar app color="white">
-      <v-navigation-drawer
-        app
-        v-model="drawer"
-        class="blue lighten-5"
-        disable-watcher
-        temporary
-      >
-        <v-list nav dense>
-          <v-list-item v-for="tab of tabs" :key="tab.id" :to="tab.route">
-            <v-spacer :key="tab.id"></v-spacer>
-            <v-list-title :key="id">
-              <v-list-title-content style="color: black">
-                <v-list-item-group
-                  v-model="group"
-                  active-class="deep-purple--text text--accent-4"
-                >
-                  <v-list-item-title>
-                    {{ tab.name }}
-                  </v-list-item-title>
-                </v-list-item-group>
-              </v-list-title-content>
-            </v-list-title>
-          </v-list-item>
-        </v-list>
-      </v-navigation-drawer>
       <v-app-bar-nav-icon
         class="hidden-md-and-up"
         style="color: black"
@@ -34,7 +29,7 @@
       </v-app-bar-nav-icon>
       <v-spacer class="hidden-md-and-up"></v-spacer>
       <v-toolbar-title style="color: black">{{ appTitle }}</v-toolbar-title>
-      <!-- MENU -->
+      <!-- DESKTOP MENU -->
       <v-toolbar color="white" flat>
         <v-tabs
           v-model="activeTab"

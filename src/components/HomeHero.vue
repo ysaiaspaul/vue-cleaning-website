@@ -7,16 +7,21 @@
       <div class="display-3 font-weight-black white--text text-xs-center mb-3">
         ESTIMATE
       </div>
-      <v-btn depressed color="#0397D9" class="white--text mt-16"
-        >Get Started</v-btn
-      >
+      <v-flex>
+        <Form></Form>
+      </v-flex>
     </v-layout>
   </v-container>
 </template>
 
 <script>
+import Form from "@/components/Form";
 export default {
   name: "HomeHero",
+  components: {
+    // eslint-disable-next-line vue/no-unused-components
+    Form,
+  },
 };
 </script>
 

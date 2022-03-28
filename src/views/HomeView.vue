@@ -59,9 +59,7 @@
           >Give Us A Call Today</v-flex
         >
         <v-layout justify-center mb-16>
-          <v-btn depressed color="#0397D9" class="white--text mt-16"
-            >Get Started</v-btn
-          >
+          <Form></Form>
         </v-layout>
       </v-layout>
     </v-container>
@@ -70,6 +68,7 @@
 
 <script>
 // @ is an alias to /src
+import Form from "@/components/Form";
 import HomeHero from "@/components/HomeHero";
 import Testimonials from "@/components/Testimonials";
 export default {
@@ -77,6 +76,7 @@ export default {
   components: {
     HomeHero,
     Testimonials,
+    Form,
   },
 };
 </script>
