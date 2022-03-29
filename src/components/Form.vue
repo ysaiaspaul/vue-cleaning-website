@@ -16,7 +16,7 @@
       <v-card-title>
         <h2>Contact us</h2>
       </v-card-title>
-      <v-form class="px-3" id="contact_form">
+      <v-form class="px-3">
         <v-text-field label="Name" v-model="name" class="name"></v-text-field>
         <v-text-field
           label="Last Name"
@@ -31,7 +31,6 @@
         <v-btn color="blue darken-1" text @click="dialog = false">
           Close
         </v-btn>
-        <v-btn color="blue darken-1" text @click="dialog = false"> Save </v-btn>
       </v-card-actions>
     </v-card>
   </v-dialog>
@@ -51,14 +50,10 @@ export default {
   },
   methods: {
     submit() {
-      console.log(this.title, this.content);
+      console.log(this.name, this.last_name, this.message);
     },
   },
 };
 </script>
 
-<style scoped>
-#contact_form {
-  margin: 50px 0 0 0;
-}
-</style>
+<style scoped></style>
