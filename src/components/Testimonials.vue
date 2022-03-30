@@ -26,7 +26,7 @@
           <v-card-text>
             They did a perfect job cleaning my property. I have been their
             client for about 2 years already and have never a complaint about
-            their services. If you need professionals, fully clean place.
+            their services. If you need professionals, fully clean is the place.
           </v-card-text>
         </div>
       </v-expand-transition>
@@ -58,7 +58,7 @@
           <v-card-text>
             They did a perfect job cleaning my property. I have been their
             client for about 2 years already and have never a complaint about
-            their services. If you need professionals, fully clean place.
+            their services. If you need professionals, fully clean is the place.
           </v-card-text>
         </div>
       </v-expand-transition>
@@ -90,7 +90,7 @@
           <v-card-text>
             They did a perfect job cleaning my property. I have been their
             client for about 2 years already and have never a complaint about
-            their services. If you need professionals, fully clean place.
+            their services. If you need professionals, fully clean is the place.
           </v-card-text>
         </div>
       </v-expand-transition>
