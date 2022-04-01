@@ -10,26 +10,13 @@
       <v-card-title> Mike Danger </v-card-title>
 
       <v-card-subtitle> Best cleaning service </v-card-subtitle>
-
-      <v-card-actions>
-        <v-spacer></v-spacer>
-
-        <v-btn icon @click="show = !show">
-          <v-icon>{{ show ? "mdi-chevron-up" : "mdi-chevron-down" }}</v-icon>
-        </v-btn>
-      </v-card-actions>
-
-      <v-expand-transition>
-        <div v-show="show">
-          <v-divider></v-divider>
-
-          <v-card-text>
-            They did a perfect job cleaning my property. I have been their
-            client for about 2 years already and have never a complaint about
-            their services. If you need professionals, fully clean is the place.
-          </v-card-text>
-        </div>
-      </v-expand-transition>
+      <v-spacer></v-spacer>
+      <v-divider></v-divider>
+      <v-card-text>
+        They did a perfect job cleaning my property. I have been their client
+        for about 2 years already and have never a complaint about their
+        services. If you need professionals, fully clean is the place.
+      </v-card-text>
     </v-card>
     <!--CARD TWO-->
     <v-card class="mx-auto" max-width="344">
@@ -42,26 +29,13 @@
       <v-card-title> Laura Melo </v-card-title>
 
       <v-card-subtitle> Outstanding work </v-card-subtitle>
-
-      <v-card-actions>
-        <v-spacer></v-spacer>
-
-        <v-btn icon @click="show = !show">
-          <v-icon>{{ show ? "mdi-chevron-up" : "mdi-chevron-down" }}</v-icon>
-        </v-btn>
-      </v-card-actions>
-
-      <v-expand-transition>
-        <div v-show="show">
-          <v-divider></v-divider>
-
-          <v-card-text>
-            They did a perfect job cleaning my property. I have been their
-            client for about 2 years already and have never a complaint about
-            their services. If you need professionals, fully clean is the place.
-          </v-card-text>
-        </div>
-      </v-expand-transition>
+      <v-spacer></v-spacer>
+      <v-divider></v-divider>
+      <v-card-text>
+        They did a perfect job cleaning my property. I have been their client
+        for about 2 years already and have never a complaint about their
+        services. If you need professionals, fully clean is the place.
+      </v-card-text>
     </v-card>
     <!--CARD THREE-->
     <v-card class="mx-auto" max-width="344">
@@ -74,26 +48,14 @@
       <v-card-title> Michaela Balcony </v-card-title>
 
       <v-card-subtitle> Great service </v-card-subtitle>
+      <v-spacer></v-spacer>
+      <v-divider></v-divider>
 
-      <v-card-actions>
-        <v-spacer></v-spacer>
-
-        <v-btn icon @click="show = !show">
-          <v-icon>{{ show ? "mdi-chevron-up" : "mdi-chevron-down" }}</v-icon>
-        </v-btn>
-      </v-card-actions>
-
-      <v-expand-transition>
-        <div v-show="show">
-          <v-divider></v-divider>
-
-          <v-card-text>
-            They did a perfect job cleaning my property. I have been their
-            client for about 2 years already and have never a complaint about
-            their services. If you need professionals, fully clean is the place.
-          </v-card-text>
-        </div>
-      </v-expand-transition>
+      <v-card-text>
+        They did a perfect job cleaning my property. I have been their client
+        for about 2 years already and have never a complaint about their
+        services. If you need professionals, fully clean is the place.
+      </v-card-text>
     </v-card>
   </v-row>
 </template>

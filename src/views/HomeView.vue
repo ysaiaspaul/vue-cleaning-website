@@ -56,8 +56,8 @@
           <testimonials></testimonials>
         </v-flex>
         <v-flex class="display-2 text-center my-10"
-          >Give Us A Call Today</v-flex
-        >
+          >Give Us A Call Today
+        </v-flex>
         <v-layout justify-center mb-16>
           <Form></Form>
         </v-layout>

@@ -1,6 +1,10 @@
 <template>
   <div class="contact">
-    <h1>This is a contact page</h1>
+    <v-container app>
+      <v-layout column>
+        <v-flex class="display-2 text-center my-5">Contact Us</v-flex>
+      </v-layout>
+    </v-container>
   </div>
 </template>
 <script>
