@@ -58,6 +58,30 @@
         <v-flex class="display-2 text-center my-10"
           >Give Us A Call Today
         </v-flex>
+        <v-row>
+          <v-col class="text-center hidden-md-and-down">
+            <v-icon
+              size="150"
+              onclick="window.open('tel:609-436-2936');"
+              class="iconsStyle"
+              >mdi-phone</v-icon
+            >
+            <p onclick="window.open('tel:609-436-2936');" class="iconsStyle">
+              609-436-2936
+            </p>
+          </v-col>
+          <v-col class="text-center hidden-md-and-up">
+            <v-icon
+              size="100"
+              onclick="window.open('tel:609-436-2936');"
+              class="iconsStyle"
+              >mdi-phone</v-icon
+            >
+            <p onclick="window.open('tel:609-436-2936');" class="iconsStyle">
+              609-436-2936
+            </p>
+          </v-col>
+        </v-row>
         <v-layout justify-center mb-16>
           <Form></Form>
         </v-layout>
